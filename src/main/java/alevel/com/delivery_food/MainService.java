@@ -1,6 +1,6 @@
 package alevel.com.delivery_food;
 
-import alevel.com.delivery_food.data.Stock;
+import alevel.com.delivery_food.logic.Stock;
 import alevel.com.delivery_food.logic.Chef;
 import org.springframework.stereotype.Service;
 

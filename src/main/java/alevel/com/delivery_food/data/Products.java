@@ -1,15 +1,7 @@
 package alevel.com.delivery_food.data;
 
-import lombok.Getter;
-import lombok.Setter;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-
 @SuppressWarnings("ALL")
-@Getter
-@Setter
-public class Stock {
+public class Products {
 
     public final static String TOMATO_SAUCE = "Tomato Sauce";
     public final static String MOZZARELLACHEESE = "Mozzarella cheese";
@@ -32,48 +24,27 @@ public class Stock {
     public final static String MUSHROOMS = "Mushrooms";
     public final static String OLIVES = "Olives";
     public final static String OLIVE_GARLIC_SAUCE = "Olive-garlic sauce";
+    public final static String PINK_SALMON = "Pink salmon";
+    public final static String MASAGO_CAVIAR = "Masago caviar";
+    public final static String SESAME = "Sesame";
+    public final static String CHUKA_SALAD = "Chuka salad";
+    public final static String CREAM_CHEESE = "Cream cheese";
+    public final static String CUCUMBER = "Cucumber";
+    public final static String OMELETTE = "Omelette";
+    public final static String UNAGI_SAUCE = "Unagi sauce";
+    public final static String TOASTER_CHEESE = "Toaster cheese";
+    public final static String ACNE = "Acne";
+    public final static String SALMON = "Salmon";
+    public final static String BUTTER_FILLET = "Butter fillet";
+    public final static String GREEN_ONION = "Green onion";
+    public final static String MAYONNAISE = "Mayonnaise";
+    public final static String CHICKEN_FILLET = "Chicken fillet";
+    public final static String SNOW_CRAB = "Snow crab";
+    public final static String UNAGI_PERCH = "Unagi perch";
+    public final static String PANKO_CRACKERS = "Panko crackers";
+    public final static String TEMPURA_BATTER = "Tempura batter";
+    public final static String COCA_COLA = "Coca-cola";
+    public final static String FANTA = "Fanta";
+    public final static String SPRITE = "Sprite";
 
-    private HashMap<String, Integer> products = new HashMap<>();
-
-    private final int nullProducts = 0;
-
-
-    public Stock() {
-
-        ArrayList<String> listName = nameProducts();
-
-        for (int i = 0; i < listName.size(); i++) {
-            products.put(listName.get(i), nullProducts);
-        }
-    }
-
-
-    private ArrayList<String> nameProducts() {
-
-        ArrayList<String> name = new ArrayList<String>();
-
-        name.add(TOMATO_SAUCE);
-        name.add(MOZZARELLACHEESE);
-        name.add(PEPPERONI);
-        name.add(HAM);
-        name.add(SALAMI);
-        name.add(CHAMPIGNON);
-        name.add(BLACK_OLIVES);
-        name.add(BACON);
-        name.add(TOMATOES);
-        name.add(GREENERY);
-        name.add(SWEET_PEPPER);
-        name.add(JALEPENO_PEPPER);
-        name.add(ONION);
-        name.add(PINEAPPLES);
-        name.add(HUNTING_SAUSAGES);
-        name.add(PICKLED_CUCUMBERRS);
-        name.add(ZUCCHINI);
-        name.add(BELL_PEPPER);
-        name.add(MUSHROOMS);
-        name.add(OLIVES);
-        name.add(OLIVE_GARLIC_SAUCE);
-
-        return name;
-    }
 }

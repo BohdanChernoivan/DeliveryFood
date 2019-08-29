@@ -1,12 +1,10 @@
 package alevel.com.delivery_food.controller;
 
 import alevel.com.delivery_food.MainService;
-import alevel.com.delivery_food.data.Stock;
 import alevel.com.delivery_food.entity.Inventory;
 import alevel.com.delivery_food.repositories.InventoryRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

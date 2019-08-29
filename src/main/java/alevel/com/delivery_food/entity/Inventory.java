@@ -18,7 +18,6 @@ import javax.persistence.Table;
 public class Inventory {
 
     @Id
-//    @UniqueElements
     @Column(name = "nameDish", unique = true)
     private String nameDish;
 

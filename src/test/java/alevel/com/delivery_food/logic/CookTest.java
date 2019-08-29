@@ -1,6 +1,5 @@
 package alevel.com.delivery_food.logic;
 
-import alevel.com.delivery_food.data.Stock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,9 +8,84 @@ import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("JUnit 5")
+@DisplayName("Abstract class")
 class CookTest {
     private Cook cook = new Cook() {
+        @Override
+        public void cookBaltimore() {
+
+        }
+
+        @Override
+        public void cookRainbow() {
+
+        }
+
+        @Override
+        public void cookMorocco() {
+
+        }
+
+        @Override
+        public void cookVerona() {
+
+        }
+
+        @Override
+        public void cookPharaoh() {
+
+        }
+
+        @Override
+        public void cookSunrise() {
+
+        }
+
+        @Override
+        public void cookUnagiTempura() {
+
+        }
+
+        @Override
+        public void cookHawaiian() {
+
+        }
+
+        @Override
+        public void cookMargarita() {
+
+        }
+
+        @Override
+        public void cookSeasons() {
+
+        }
+
+        @Override
+        public void cookMomMia() {
+
+        }
+
+        @Override
+        public void cookMexican() {
+
+        }
+
+        @Override
+        public void cookPepperoni() {
+
+        }
+
+        @Override
+        public void cookVegetarian() {
+
+        }
+
+        @Override
+        public void cookHunting() {
+
+        }
+
         @Override
         protected boolean isAvailableFood(Stock stock, HashMap<String, Integer> recipe) {
             return super.isAvailableFood(stock, recipe);

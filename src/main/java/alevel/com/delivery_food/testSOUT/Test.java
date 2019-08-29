@@ -1,23 +1,25 @@
 package alevel.com.delivery_food.testSOUT;
 
-import alevel.com.delivery_food.data.PizzaType;
-import alevel.com.delivery_food.data.Stock;
+import alevel.com.delivery_food.data.type_food.Pizza;
+import alevel.com.delivery_food.logic.Stock;
 import alevel.com.delivery_food.logic.Chef;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static alevel.com.delivery_food.data.Products.*;
+
 public class Test {
     public static void main(String[] args) {
 
         Stock stock = new Stock();
-        stock.getProducts().put(Stock.TOMATO_SAUCE, 200);
-        stock.getProducts().put(Stock.MOZZARELLACHEESE, 200);
-        stock.getProducts().put(Stock.HAM, 200);
-        stock.getProducts().put(Stock.PINEAPPLES, 200);
+        stock.getProducts().put(TOMATO_SAUCE, 200);
+        stock.getProducts().put(MOZZARELLACHEESE, 200);
+        stock.getProducts().put(HAM, 200);
+        stock.getProducts().put(PINEAPPLES, 200);
 
         Chef chef = new Chef(stock);
-        chef.cookPizza(PizzaType.HAWAIIAN);
+        chef.cookPizza(Pizza.HAWAIIAN);
 
         List<String> fullNameProducts = new ArrayList<>(stock.getProducts().keySet());
         List<Integer> fullAvailableProducts = new ArrayList<>(stock.getProducts().values());
@@ -27,5 +29,6 @@ public class Test {
             System.out.println(fullNameProducts.get(i));
             System.out.println(fullAvailableProducts.get(i));
         }
+        
     }
 }

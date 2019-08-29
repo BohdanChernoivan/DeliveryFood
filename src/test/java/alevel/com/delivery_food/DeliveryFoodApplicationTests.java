@@ -7,23 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DeliveryFoodApplicationTests {
 
 
-	/*
-
-
-@FunctionalInterface
-public interface CookDrinks {
-    void test(Integer value);
-}
-
-
-
-//        CookDrinks s = () -> System.out.println("HELLO");
-
-	*      // needProducts.stream().filter(x -> x > 100);
-        // needProducts.parallelStream()
-
-        // Collectors.
-	* */
 	@Test
 	void contextLoads() {
 	}

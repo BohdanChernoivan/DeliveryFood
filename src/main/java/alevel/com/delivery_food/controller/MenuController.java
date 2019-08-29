@@ -2,8 +2,7 @@ package alevel.com.delivery_food.controller;
 
 
 import alevel.com.delivery_food.MainService;
-import alevel.com.delivery_food.data.PizzaType;
-import alevel.com.delivery_food.data.Stock;
+import alevel.com.delivery_food.data.type_food.Pizza;
 import alevel.com.delivery_food.entity.Menu;
 import alevel.com.delivery_food.repositories.MenuRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +41,7 @@ public class MenuController {
     public String addFullMenu() {
         Menu menu;
 
-        for (PizzaType type : PizzaType.values()) {
+        for (Pizza type : Pizza.values()) {
             menu = new Menu();
             menu.setDishName(type.getNamePizza());
 

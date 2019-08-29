@@ -1,14 +1,15 @@
 package alevel.com.delivery_food.logic;
 
-import alevel.com.delivery_food.data.Stock;
+import alevel.com.delivery_food.logic.menu_food.CookPizza;
+import alevel.com.delivery_food.logic.menu_food.CookRolls;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public abstract class Cook {
+public abstract class Cook implements CookPizza, CookRolls {
 
-    protected void takeFromStock(Stock stock, HashMap<String, Integer> recipe) {
+    void takeFromStock(Stock stock, HashMap<String, Integer> recipe) {
 
         List<String> nameProducts = new ArrayList<>(recipe.keySet());
 

@@ -1,26 +1,10 @@
 package alevel.com.delivery_food.logic.menu_food;
 
-import alevel.com.delivery_food.data.PizzaType;
+import alevel.com.delivery_food.data.type_food.Pizza;
 
 public interface CookPizza {
 
-    void cookHawaiian();
-
-    void cookMargarita();
-
-    void cookSeasons();
-
-    void cookMomMia();
-
-    void cookMexican();
-
-    void cookPepperoni();
-
-    void cookVegetarian();
-
-    void cookHunting();
-
-    default void cookPizza(PizzaType pizzaType) {
+    default void cookPizza(Pizza pizzaType) {
 
         switch (pizzaType) {
             case HAWAIIAN:
@@ -49,5 +33,21 @@ public interface CookPizza {
                 break;
         }
     }
+
+    void cookHawaiian();
+
+    void cookMargarita();
+
+    void cookSeasons();
+
+    void cookMomMia();
+
+    void cookMexican();
+
+    void cookPepperoni();
+
+    void cookVegetarian();
+
+    void cookHunting();
 
 }

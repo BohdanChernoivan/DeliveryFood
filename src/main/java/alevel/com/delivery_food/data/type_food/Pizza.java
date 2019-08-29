@@ -1,6 +1,6 @@
-package alevel.com.delivery_food.data;
+package alevel.com.delivery_food.data.type_food;
 
-public enum PizzaType {
+public enum Pizza {
 
     HAWAIIAN("Hawaiian"),
     MARGARITA("Margarita"),
@@ -14,7 +14,7 @@ public enum PizzaType {
 
     private String namePizza;
 
-    PizzaType(String namePizza) {
+    Pizza(String namePizza) {
         this.namePizza = namePizza;
     }
 
