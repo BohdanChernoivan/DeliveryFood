@@ -4,7 +4,7 @@ package alevel.com.delivery_food.controller;
 import alevel.com.delivery_food.MainService;
 import alevel.com.delivery_food.data.type_food.Pizza;
 import alevel.com.delivery_food.entity.Menu;
-import alevel.com.delivery_food.repositories.MenuRepositories;
+import alevel.com.delivery_food.entity.repositories.MenuRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,7 +47,6 @@ public class MenuController {
 
             menuRepositories.save(menu);
         }
-
 
         return MainService.DONE_SERVICE;
     }

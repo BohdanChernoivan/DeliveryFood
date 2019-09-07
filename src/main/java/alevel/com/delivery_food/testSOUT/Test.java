@@ -29,6 +29,32 @@ public class Test {
             System.out.println(fullNameProducts.get(i));
             System.out.println(fullAvailableProducts.get(i));
         }
-        
+
+        String n1 = "Hello";
+        String n2 = "are";
+        String n3 = "you";
+        String n4 = "ready?";
+
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        List<String> hayr = new ArrayList<>();
+
+        hayr.add(n1);
+        hayr.add(n2);
+        hayr.add(n3);
+        hayr.add(n4);
+
+        boolean wtf = true;
+
+        for (String s: hayr) {
+            if(wtf) {
+                wtf = false;
+                stringBuilder.append(s);
+            } else
+            stringBuilder.append(", ").append(s);
+        }
+
+        System.out.println(stringBuilder);
     }
 }

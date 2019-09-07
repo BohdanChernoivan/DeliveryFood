@@ -24,6 +24,7 @@ public class Menu {
     private UUID dishID;
 
     @NonNull
+    @OrderBy("firstName asc")
     @Column(name = "dish_name")
     private String dishName;
 

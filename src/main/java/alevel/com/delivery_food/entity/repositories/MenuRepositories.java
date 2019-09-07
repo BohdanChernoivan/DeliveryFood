@@ -1,4 +1,4 @@
-package alevel.com.delivery_food.repositories;
+package alevel.com.delivery_food.entity.repositories;
 
 import alevel.com.delivery_food.entity.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;

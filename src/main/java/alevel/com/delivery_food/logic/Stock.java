@@ -12,7 +12,6 @@ import static alevel.com.delivery_food.data.Products.*;
 @Setter
 public class Stock {
 
-
     private HashMap<String, Integer> products = new HashMap<>();
 
     private final int nullProducts = 0;
@@ -53,6 +52,29 @@ public class Stock {
         name.add(MUSHROOMS);
         name.add(OLIVES);
         name.add(OLIVE_GARLIC_SAUCE);
+        name.add(PINK_SALMON);
+        name.add(MASAGO_CAVIAR);
+        name.add(SESAME);
+        name.add(CHUKA_SALAD);
+        name.add(CREAM_CHEESE);
+        name.add(CUCUMBER);
+        name.add(OMELETTE);
+        name.add(UNAGI_SAUCE);
+        name.add(TOASTER_CHEESE);
+        name.add(ACNE);
+        name.add(SALMON);
+        name.add(BUTTER_FILLET);
+        name.add(GREEN_ONION);
+        name.add(MAYONNAISE);
+        name.add(CHICKEN_FILLET);
+        name.add(SNOW_CRAB);
+        name.add(UNAGI_PERCH);
+        name.add(PANKO_CRACKERS);
+        name.add(TEMPURA_BATTER);
+        name.add(COCA_COLA);
+        name.add(FANTA);
+        name.add(SPRITE);
+
 
         return name;
     }
