@@ -17,6 +17,7 @@ import java.util.UUID;
 @ToString
 public class User {
 
+
     @Id
     @Type(type = "uuid-char")
     @GeneratedValue(generator = "uuid")
@@ -35,4 +36,7 @@ public class User {
 
     @Column(name = "address", nullable = false)
     private String address;
+
+    @Transient
+    public String getProduct;
 }
